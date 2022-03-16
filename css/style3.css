@@ -1,0 +1,29 @@
+#text{
+    margin-top: 20px;
+}
+
+h4.main-header-tow{
+    padding: 30px;
+    position: relative;
+
+
+}
+h4.main-header-tow::before{
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    right:15px ;
+    width: 4px;
+    height: 40px;
+    background-color: #3aade6;
+
+}
+.word{
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 40px;
+}
+.word .box {
+    background-color: white;
+
+}

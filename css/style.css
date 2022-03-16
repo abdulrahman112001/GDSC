@@ -1,0 +1,285 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    direction:rtl;
+    scroll-behavior: smooth;
+   
+
+}
+:root{
+    --main-color:#3aade6
+}
+img{
+    max-width: 100%;
+}
+/* nav bar */
+.navbar-brand{
+    background-color: #f8f9fa;
+}
+.navbar-brand img{
+    width: 150px;
+
+
+}
+.navbar-light .navbar-toggler{
+    border: none;
+
+}
+
+.navbar-toggler span{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(59,173,230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+
+
+}
+
+/* end nav bar */
+/* header */
+section.header .row{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+section.header  img{
+    width: 90% ;
+    animation: head 2s infinite  linear  ;
+    position: relative;
+
+}
+
+@keyframes head {
+    0%{
+        top: 0px;
+        
+    }
+    50%{
+        top: -60px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+
+
+
+
+div.back {
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+
+}
+div.back h3 {
+    margin-top: 100px;
+    font-size: 32px;
+    padding-left: 31px;
+    padding-right: 112px;
+
+}
+h3.main-headers{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+    position: relative;
+
+}
+h3.main-headers::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    border: 1px solid var(--main-color);
+    bottom: -15px;
+    left: calc(50% - 30px);
+}
+
+.hello img{
+    width: 80%;
+}
+.text p{
+    margin-top: 100px;
+    line-height: 2;
+    font-size: 23px;
+
+}
+@media(max-width:992px){
+    section.header img{
+        width: 90% ;
+    }
+    .hello img{
+        width: 100%;
+    }
+    .text p{
+        text-align: center;
+    }
+}
+
+/*  end header */
+/* section 3 */
+.sec-3 .main {
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    padding: 30px;
+    /* height: 85vh; */
+}
+.sec-3 .box{
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.sec-3 .box img{
+    width: 40% !important;
+    margin: auto;
+
+
+
+}
+.sec-3 .box p{
+    padding-top: 10px;
+}
+.owl-carousel{
+    padding: 40px;
+}
+
+/* end section 3 */
+
+/* works section 4 */
+.sec-4{
+
+
+}
+.works {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color:    #f6f6f6;
+
+}
+.works .box {
+    width: 90%;
+    height: 80%;
+    /* overflow: hidden; */
+    background-color: white;
+
+    border-radius: 30px;
+    /* margin-bottom:30px; */
+    text-align: center;
+    box-shadow: 0 0 13px -3px;;
+
+}
+
+.works .box img {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+    border-radius: 30px ;
+}
+.btn-primary{
+    border-radius: 70px;
+    margin-bottom: 100px;
+    background-color: #233142 !important;
+
+}
+
+
+/* end works section 4 */
+/* secion - 5 */
+.sec-5{
+    
+}
+.sec-5 .box{
+    width: 90%;
+    height: 90%;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 13px -3px;;
+    text-align: center;
+
+
+
+}
+.sec-5 .box img{
+    width: 100%;
+}
+.sec-5 .box p{
+    padding: 5px 50px 20px 50px;
+    font-size: 18px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-right: 20px ;
+    /* align-items: center; */
+}
+.details button{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: #233142;
+    color: white;
+}
+/* end section - 5 */
+/* section-6 */
+.sec-6 .box{
+    width: 50%;
+
+}
+.sec-6 .main{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+
+/* end section - 6 */
+/* footer */
+footer{
+   /* margin-top: 100px; */
+   /* background-size: 100%; */
+   background-repeat: no-repeat;
+   padding: 80px;
+
+   
+   
+}
+@media (max-width:780px){
+    footer{
+        text-align: center;
+    }
+
+}
+footer .box {
+    /* margin-top: 10%; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+footer .box img {
+    /* width: 30%; */
+
+}
+footer .box p {
+    color:white;
+    padding: 20px 0 20px 0;
+}
+footer .box span  {
+    display: flex;
+    justify-content: space-between;
+
+}
+footer .box i {
+    color: white;
+}
+footer img.person{
+    width: 30%;
+
+}
+/* end footer */
